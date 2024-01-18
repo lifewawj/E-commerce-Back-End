@@ -1,3 +1,8 @@
+# Hides the node_modules folder
 node_modules
+
+# Hides the .env file and its SECRETS
 .env
+
+# Hides the .DS_Store
 .DS_Store
