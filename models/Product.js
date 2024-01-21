@@ -33,28 +33,31 @@ Product.init(
 
     // Field #4
     stock: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 10,
-      isNumeric: true,
+      type: DataTypes.INTEGER, // INT
+      allowNull: false, // Doesnt allow Null values
+      defaultValue: 10, // Sets the default to 10
+      isNumeric: true, // Validates that the value is numeric
     },
 
     // Field #5
     category_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER, // INT
       references: {
-        model: 'category',
-        key: 'id',
-        unique: false,
+        model: 'category', // selects the table/model called table
+        key: 'id', // making the category_id -> the id in the category table/model
+        unique: true, // makes the category_id required
       }
     }
   },
 
   {
+    // Link to database connection
     sequelize,
+    // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     freezeTableName: true,
     underscored: true,
+    // Assigning the name for our table 'product'
     modelName: 'product',
   }
 );
