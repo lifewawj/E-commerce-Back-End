@@ -6,3 +6,9 @@ node_modules
 
 # Hides the .DS_Store
 .DS_Store
+
+# Hides my personal notes
+notes.txt
+
+# Hides the Challenge Instructions and its Assets
+challenge
