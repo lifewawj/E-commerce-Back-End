@@ -14,11 +14,9 @@ Category.init(
       primaryKey: true, // sets the Id to be the Primary Key
       allowNull: false, // Doesnt allow null values
       autoIncrement: true, // Auto Increments each row (category) in the category table (1, 2, 3, etc).
-    }
-  },
+    },
 
   // Field #2
-  {
     category_name: {
       type: DataTypes.STRING, // STRING
       allowNull: false, // Doesnt allow null values
