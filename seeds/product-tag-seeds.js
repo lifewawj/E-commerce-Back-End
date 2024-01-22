@@ -1,5 +1,7 @@
+// Requires the ProductTag db Table from the models folder
 const { ProductTag } = require('../models');
 
+// Stores product tag data inside a const variable called productTagData, within an array with multiple product_id(s), and its tag_id(s)
 const productTagData = [
   {
     product_id: 1,
@@ -51,6 +53,8 @@ const productTagData = [
   },
 ];
 
+// Inside a function named seedProductTags, it Creates multiple productTag(s) and stores it inside the ProductTag db Table
 const seedProductTags = () => ProductTag.bulkCreate(productTagData);
 
+// Exports the seedProductTags
 module.exports = seedProductTags;

@@ -1,8 +1,10 @@
+// Retreives all the Exported seeds from the seeds folder
 const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');
 const seedTags = require('./tag-seeds');
 const seedProductTags = require('./product-tag-seeds');
 
+// Retreives sequalize Export from the connection.js file
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
@@ -23,4 +25,5 @@ const seedAll = async () => {
   process.exit(0);
 };
 
+// Calls the seedAll function
 seedAll();

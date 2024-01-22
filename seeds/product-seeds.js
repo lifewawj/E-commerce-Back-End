@@ -1,5 +1,7 @@
+// Retrives the Product db Table from the models folder
 const { Product } = require('../models');
 
+// Stores all the product data inside a const variable within an array called productData
 const productData = [
   {
     product_name: 'Plain T-Shirt',
@@ -33,6 +35,8 @@ const productData = [
   },
 ];
 
+// Inside a function named seedProducts, it Creates multiple product(s) inside the Product db Table
 const seedProducts = () => Product.bulkCreate(productData);
 
+// Exports the seedProducts
 module.exports = seedProducts;
