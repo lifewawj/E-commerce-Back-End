@@ -28,7 +28,9 @@ Product.init(
     price: {
       type: DataTypes.FLOAT, // Decimal Number
       allowNull: false, // Doesnt allow Null values
-      isFloat: true, // Validates that the value is a decimal
+      validate: {
+        isFloat: true, // Validates that the value is a decimal
+      }
     },
 
     // Field #4
@@ -36,7 +38,9 @@ Product.init(
       type: DataTypes.INTEGER, // INT
       allowNull: false, // Doesnt allow Null values
       defaultValue: 10, // Sets the default to 10
-      isNumeric: true, // Validates that the value is numeric
+      validate: {
+        isNumeric: true, // Validates that the value is numeric
+      }
     },
 
     // Field #5
