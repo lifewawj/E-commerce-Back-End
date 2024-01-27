@@ -12,3 +12,6 @@ notes.txt
 
 # Hides the Challenge Instructions and its Assets
 challenge
+
+# Hides the assets folder
+assets
