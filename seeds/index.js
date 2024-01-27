@@ -7,6 +7,7 @@ const seedProductTags = require('./product-tag-seeds');
 // Retreives sequalize Export from the connection.js file
 const sequelize = require('../config/connection');
 
+// a function that syncs sequalize to the database, and seeds all the models
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
