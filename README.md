@@ -27,7 +27,7 @@ Make sure to run "npm i" to have all the dependencies installed
 
 ## Usage
 
-<!-- ADD GIF AND MP4 HERE -->
+[![Click here to Download Tutorial Video](./assets/ecommerce_backEnd_tutorial.mp4)]
 
 ## Features
 
